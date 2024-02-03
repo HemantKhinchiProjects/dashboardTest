@@ -32,42 +32,43 @@ export const companys = {
     intreast: 8.8,
   },
 };
-const people = [
+export const listData = [
   {
     id: 1,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "maria ferguson",
-    title: "office manager",
-    quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+    title: "Fixed Deposit",
+    date: "12/01/2022",
+    depositAmt: "₹10,000",
+    tenure: "12 months",
+    interestRate: "8.5%",
+    status: "Upcoming FD Maturity",
+    action: "Renew FD",
   },
   {
     id: 2,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    name: "john doe",
-    title: "regular guy",
-    quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+    title: "Recurring Deposit",
+    date: "12/01/2022",
+    depositAmt: "₹5,000",
+    tenure: "6 months",
+    interestRate: "7.5%",
+    status: "Renew by",
+    action: "Renew RD",
   },
   {
     id: 3,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg",
-    name: "peter smith",
-    title: "product designer",
-    quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+    title: "Savings Account",
+    date: "12/01/2022",
+    balance: "₹15,000",
+    status: "Upcoming FD Maturity",
+    action: "Renew FD",
   },
   {
     id: 4,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-    name: "susan andersen",
-    title: "the boss",
-    quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+    title: "Loan",
+    date: "12/01/2022",
+    loanAmt: "₹20,000",
+    tenure: "24 months",
+    interestRate: "10%",
+    status: "Cancel Application",
+    action: "Cancel Loan",
   },
 ];
-export default people;

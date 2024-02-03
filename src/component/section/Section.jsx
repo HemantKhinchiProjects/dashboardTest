@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { companys } from "../../data";
 import { HiCheck } from "react-icons/hi";
+import Slider from "../slider/Slider";
 
 export default function Section() {
   function getBackgroundColorClass(title) {
@@ -66,6 +67,9 @@ export default function Section() {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="mt-4 w-full full flex overflow-x-hidden">
+        {/* <Slider /> */}
       </div>
     </div>
   );

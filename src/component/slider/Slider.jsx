@@ -1,20 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
-import "tailwindcss/tailwind.css";
 
 const Slider = () => {
   const [owlInstance, setOwlInstance] = useState(null);
   const slides = [
-    { title: "Slide 1", description: "Description 1" },
-    { title: "Slide 2", description: "Description 2" },
-    { title: "Slide 3", description: "Description 3" },
-    { title: "Slide 4", description: "Description 4" },
-    { title: "Slide 5", description: "Description 5" },
-    { title: "Slide 6", description: "Description 6" },
-    { title: "Slide 7", description: "Description 7" },
-    { title: "Slide 8", description: "Description 8" },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
+    {
+      title: "How FDs are taxed",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    },
   ];
 
   const options = {
@@ -38,11 +69,17 @@ const Slider = () => {
     },
     onInitialized: (instance) => {
       setOwlInstance(instance);
+      // +instance.enter(true);
     },
   };
+  // useEffect(() => {
+  //   if (owlInstance) {
+  //     owlInstance.enter(true);
+  //   }
+  // }, [owlInstance]);
 
   return (
-    <div className="slider owl-carousel">
+    <div className="slider owl-carousel" style={{ display: "block" }}>
       <div className="slider-controls">
         <button className="slider-prev" onClick={() => owlInstance.prev()}>
           Prev
@@ -57,9 +94,12 @@ const Slider = () => {
         {...options}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="bg-white text-xl rounded-lg shadow p-8">
-            <h2 className="mb-2">{slide.title}</h2>
-            <p>{slide.description}</p>
+          <div
+            key={index}
+            className="bg-white text-xl rounded-lg shadow p-8 mr-4"
+          >
+            <h2 className="text-xl font-semibold mb-4">{slide.title}</h2>
+            <p className="text-sm  mb-4">{slide.description}</p>
           </div>
         ))}
       </OwlCarousel>
