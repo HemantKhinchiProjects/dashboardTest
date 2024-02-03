@@ -19,10 +19,12 @@ export default function Section() {
 
   return (
     <main className="bg-slate-50">
-      <div className="container">
-        <div className="py-4 px-12 mx-4">
-          <h1 className="text-3xl font-bold mb-1">Welcome, John Doe</h1>
-          <ul className="cards grid grid-cols-3 gap-4">
+      <div className="container mx-auto px-4">
+        <div className="py-4">
+          <h1 className="text-3xl font-bold mb-4 text-center">
+            Welcome, John Doe
+          </h1>
+          <ul className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {Object.values(companys).map((company, index) => (
               <li
                 key={index}
