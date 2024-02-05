@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { companys } from "../../data";
 import { HiCheck } from "react-icons/hi";
-import Slider from "../slider/Slider";
+// import FDPortfolioGraph from "../fdportfolio/FDPortfolio";
 
 export default function Section() {
   function getBackgroundColorClass(title) {
@@ -22,6 +22,7 @@ export default function Section() {
     <div className="container mx-auto">
       <div className="py-4">
         <h1 className="text-3xl font-bold mb-4">Welcome, John Doe</h1>
+        {/* <FDPortfolioGraph /> */}
         <ul className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
           {Object.values(companys).map((company, index) => (
             <li
